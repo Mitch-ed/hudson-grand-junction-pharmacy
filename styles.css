@@ -506,6 +506,7 @@ strong {
   color: var(--clr-text-muted);
   border-radius: var(--r-sm);
   text-decoration: none;
+  white-space: nowrap;
   transition: color var(--tr), background-color var(--tr);
 }
 
