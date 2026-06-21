@@ -1,5 +1,5 @@
 /* ==================================================
-   Hudson Grand Junction Pharmacy — script.js
+   Hudson Grand Junction Pharmacy - script.js
    Minimal vanilla JavaScript for:
    1. Mobile navigation toggle
    2. Active nav link highlighting
