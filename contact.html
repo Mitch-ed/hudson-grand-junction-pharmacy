@@ -166,18 +166,19 @@
               as possible. For urgent matters, please call us directly at 731-433-4500.
             </p>
 
-            <!--
-              NOTE: This form is a visual layout only and does not currently submit data.
-              To make it functional, connect it to a backend form handler, a service like
-              Formspree (https://formspree.io), or your preferred contact form solution.
-              Update the action="" attribute and method accordingly.
-            -->
+            <!-- Contact form. Submits via Web3Forms (https://web3forms.com). Replace the access_key value with this site's real key. -->
             <form
-              action="#"
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
               method="POST"
               aria-label="Contact form"
               novalidate
             >
+              <input type="hidden" name="access_key" value="c6a33407-3886-4c9c-8a1a-2ef7f709bdec" />
+              <input type="hidden" name="subject" value="New message from the Hudson Grand Junction Pharmacy website" />
+              <input type="hidden" name="from_name" value="Hudson Grand Junction Pharmacy Website" />
+              <!-- Honeypot: leave empty. Bot submissions that fill this are rejected. -->
+              <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
               <div class="form-row">
                 <div class="form-group">
@@ -273,8 +274,12 @@
                 Send Message
               </button>
 
+              <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+
               <p class="form-note">
                 Fields marked with <span style="color: #D0762A;" aria-hidden="true">*</span> are required.
+                Please use this form for general inquiries only. For your privacy and safety, do not
+                include prescription numbers, dates of birth, or other personal health details.
                 We respect your privacy and will never share your information.
                 For prescription emergencies or urgent medical needs, please call us directly
                 at <a href="tel:7314334500">731-433-4500</a>.
