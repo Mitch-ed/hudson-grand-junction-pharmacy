@@ -2230,8 +2230,8 @@ strong {
 
 .hero-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  display: block;
   border-radius: var(--r-xl);
   box-shadow: var(--sh-lg);
 }
@@ -2249,7 +2249,7 @@ strong {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--clr-text);
-  max-width: 62%;
+  max-width: 47%;
 }
 
 .hero-chip i {
@@ -2258,8 +2258,8 @@ strong {
   flex-shrink: 0;
 }
 
-.hero-chip--1 { top: var(--sp-4); right: var(--sp-4); }
-.hero-chip--2 { bottom: var(--sp-4); left: var(--sp-4); }
+.hero-chip--1 { bottom: var(--sp-4); left: var(--sp-4); }
+.hero-chip--2 { bottom: var(--sp-4); right: var(--sp-4); }
 
 
 /* "Our Services" small square cards (home) */
@@ -2577,9 +2577,9 @@ strong {
   }
 
   .hero-chip {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: var(--sp-2) var(--sp-3);
-    max-width: 70%;
+    max-width: 48%;
   }
 }
 
