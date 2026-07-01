@@ -74,37 +74,58 @@
          ──────────────────────────────────────────────────────── -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="hero-inner">
+        <div class="hero-grid">
 
-          <div class="hero-badge" aria-hidden="true">
-            <span class="hero-badge-dot"></span>
-            Your Grand Junction Neighborhood Pharmacy
+          <div class="hero-content">
+
+            <div class="hero-badge" aria-hidden="true">
+              <span class="hero-badge-dot"></span>
+              Your Grand Junction Neighborhood Pharmacy
+            </div>
+
+            <h1 id="hero-heading">
+              Trusted Care,<br>
+              Right Here in Your Community
+            </h1>
+
+            <p class="hero-sub">
+              At Hudson Grand Junction Pharmacy, we believe great pharmacy care is personal.
+              Whether you need a quick refill or have questions about a new
+              medication, our team is here for you, right here in Grand Junction,
+              every day.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-accent btn-lg">Refill a Prescription</a>
+              <!-- TODO: Replace # with your new patient registration URL -->
+              <a href="contact.html" class="btn btn-outline btn-lg">New Patient? Start Here</a>
+            </div>
+
+            <p class="hero-note">
+              <strong>Hours:</strong>&nbsp;
+              Mon – Fri &nbsp;9:00 a.m. – 3:00 p.m.
+              &nbsp;·&nbsp;
+              Sat – Sun &nbsp;Closed
+            </p>
+
           </div>
 
-          <h1 id="hero-heading">
-            Trusted Care,<br>
-            Right Here in Your Community
-          </h1>
-
-          <p class="hero-sub">
-            At Hudson Grand Junction Pharmacy, we believe great pharmacy care is personal.
-            Whether you need a quick refill or have questions about a new
-            medication, our team is here for you, right here in Grand Junction,
-            every day.
-          </p>
-
-          <div class="hero-actions">
-            <a href="contact.html" class="btn btn-accent btn-lg">Refill a Prescription</a>
-            <!-- TODO: Replace # with your new patient registration URL -->
-            <a href="contact.html" class="btn btn-outline btn-lg">New Patient? Start Here</a>
+          <div class="hero-media">
+            <img
+              src="assets/img/storefront-team.jpg"
+              alt="The Hudson Grand Junction Pharmacy team in front of the store"
+              class="hero-photo"
+              width="1600" height="1200"
+            />
+            <div class="hero-chip hero-chip--1">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+              No appointment necessary
+            </div>
+            <div class="hero-chip hero-chip--2">
+              <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+              Most insurance accepted
+            </div>
           </div>
-
-          <p class="hero-note">
-            <strong>Hours:</strong>&nbsp;
-            Mon – Fri &nbsp;9:00 a.m. – 3:00 p.m.
-            &nbsp;·&nbsp;
-            Sat – Sun &nbsp;Closed
-          </p>
 
         </div>
       </div>
@@ -113,45 +134,71 @@
 
 
     <!-- ────────────────────────────────────────────────────────
-         QUICK ACTION CARDS
+         OUR SERVICES GRID
          ──────────────────────────────────────────────────────── -->
-    <section class="section section--sm section--alt" aria-label="Quick actions">
+    <section class="section section--alt" aria-labelledby="services-grid-heading">
       <div class="container">
-        <div class="action-cards">
+        <div class="section-header section-header--center">
+          <span class="section-label">What We Offer</span>
+          <h2 id="services-grid-heading">Our Services</h2>
+          <p>Personalized pharmacy care for you and your family. Tap any service to learn more.</p>
+        </div>
 
-          <a href="contact.html" class="action-card">
-            <div class="action-card-icon action-card-icon--accent" aria-hidden="true"><i class="fa-solid fa-capsules"></i></div>
-            <h3>Refill a Prescription</h3>
-            <p>Request your refill quickly online or through our app and pick up at your convenience.</p>
-            <span class="action-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <div class="service-grid">
+
+          <a href="services.html#svc-refills" class="service-square">
+            <div class="service-square-icon" aria-hidden="true"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+            <h3>Prescription Refills</h3>
+            <p>Quick, simple refills by phone, app, or in person.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
           </a>
 
-          <!-- TODO: Replace # with your new patient registration URL -->
-          <a href="contact.html" class="action-card">
-            <div class="action-card-icon action-card-icon--primary" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div>
-            <h3>New Patient Sign-Up</h3>
-            <p>Transfer your prescriptions and join the Hudson Grand Junction Pharmacy family in just a few steps.</p>
-            <span class="action-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          <a href="services.html#svc-b12" class="service-square">
+            <div class="service-square-icon service-square-icon--accent" aria-hidden="true"><i class="fa-solid fa-syringe"></i></div>
+            <h3>B12 Injections</h3>
+            <p>Monthly B12 injections for eligible adults.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
           </a>
 
-          <a href="contact.html" class="action-card">
-            <div class="action-card-icon action-card-icon--green" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
-            <h3>Contact Us</h3>
-            <p>Call, email, or stop by. A real person is always ready to help, with no automated trees.</p>
-            <span class="action-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          <a href="services.html#svc-rash" class="service-square">
+            <div class="service-square-icon service-square-icon--green" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Rash Care</h3>
+            <p>Relief options for poison ivy, oak, and other rashes.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
           </a>
 
-          <a href="mobile-app.html" class="action-card">
-            <div class="action-card-icon action-card-icon--primary" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <h3>Mobile App</h3>
-            <p>Manage prescriptions, request refills, and set reminders from your phone.</p>
-            <span class="action-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          <a href="services.html#svc-flu-covid" class="service-square">
+            <div class="service-square-icon" aria-hidden="true"><i class="fa-solid fa-virus-covid"></i></div>
+            <h3>Flu &amp; COVID Symptom Help</h3>
+            <p>Test positive? We offer treatment options.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
+          </a>
+
+          <a href="services.html#svc-vaccines" class="service-square">
+            <div class="service-square-icon service-square-icon--accent" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>Vaccines</h3>
+            <p>Flu, COVID-19, shingles, pneumonia, and more.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
+          </a>
+
+          <a href="services.html#svc-skin" class="service-square">
+            <div class="service-square-icon service-square-icon--green" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Skin Care / Anti-Aging</h3>
+            <p>Consultation and prescription skin care options.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
+          </a>
+
+          <a href="services.html#svc-cold-sore" class="service-square">
+            <div class="service-square-icon" aria-hidden="true"><i class="fa-solid fa-kit-medical"></i></div>
+            <h3>Cold Sore Treatment</h3>
+            <p>Fast treatment for recurring cold sores.</p>
+            <span class="service-square-link" aria-hidden="true">Learn More →</span>
           </a>
 
         </div>
       </div>
     </section>
-    <!-- END QUICK ACTION CARDS -->
+    <!-- END OUR SERVICES GRID -->
 
 
     <!-- ────────────────────────────────────────────────────────
@@ -313,6 +360,43 @@
       </div>
     </div>
     <!-- END CONTACT STRIP -->
+
+
+    <!-- ────────────────────────────────────────────────────────
+         FEATURE STRIP
+         ──────────────────────────────────────────────────────── -->
+    <section class="feature-strip" aria-label="Why choose Hudson Grand Junction Pharmacy">
+      <div class="container">
+        <div class="feature-strip-grid">
+
+          <div class="feature-strip-item">
+            <div class="feature-strip-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <h4>Local &amp; Trusted</h4>
+            <p>Proudly serving Grand Junction and the surrounding communities.</p>
+          </div>
+
+          <div class="feature-strip-item">
+            <div class="feature-strip-icon" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></div>
+            <h4>Expert Care</h4>
+            <p>Knowledgeable pharmacists dedicated to your health.</p>
+          </div>
+
+          <div class="feature-strip-item">
+            <div class="feature-strip-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+            <h4>Convenient</h4>
+            <p>Walk in or schedule a time that works for you.</p>
+          </div>
+
+          <div class="feature-strip-item">
+            <div class="feature-strip-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
+            <h4>Personalized</h4>
+            <p>Compassionate care tailored to your unique needs.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END FEATURE STRIP -->
 
 
     <!-- ────────────────────────────────────────────────────────

@@ -122,7 +122,42 @@
 }());
 
 
-/* === 4. Contact Form (Web3Forms submission) === */
+/* ─── 4. Service Anchor Highlight ───────────────────────────── */
+
+/*
+ * When the Services page is opened at a #svc-... anchor (e.g. from the
+ * "Our Services" cards on the home page), briefly highlight the target
+ * card so visitors can see exactly which service they landed on.
+ * The scroll offset for the sticky header is handled in CSS via
+ * scroll-margin-top, so this only manages the visual flash.
+ */
+
+(function () {
+  function flashTarget() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+
+    var target;
+    try {
+      target = document.querySelector(hash);
+    } catch (e) {
+      return; /* malformed selector */
+    }
+
+    if (!target || !target.classList.contains('service-detail')) return;
+
+    /* Restart the animation if the same card is targeted again */
+    target.classList.remove('is-target');
+    void target.offsetWidth;
+    target.classList.add('is-target');
+  }
+
+  window.addEventListener('load', flashTarget);
+  window.addEventListener('hashchange', flashTarget);
+}());
+
+
+/* === 5. Contact Form (Web3Forms submission) === */
 
 (function () {
   var form = document.getElementById('contact-form');
