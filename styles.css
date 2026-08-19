@@ -677,6 +677,28 @@ strong {
   color: var(--clr-text-muted);
 }
 
+.hero-note-address {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+.hero-note-address i {
+  color: var(--clr-primary);
+  flex-shrink: 0;
+}
+
+.hero-note-address a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.hero-note-hours {
+  margin: 0;
+}
+
 
 /* ─── 10. Quick Action Cards ────────────────────────────────── */
 
