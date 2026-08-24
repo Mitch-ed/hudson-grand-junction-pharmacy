@@ -2114,6 +2114,17 @@ strong {
     grid-template-columns: 1fr;
   }
 
+  .benefit-callout-inner {
+    flex-direction: column;
+    gap: var(--sp-5);
+  }
+
+  .benefit-callout-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
   }
@@ -2667,8 +2678,26 @@ strong {
   color: var(--clr-white);
 }
 
+.announcement-bar-inner span {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 .announcement-bar-inner i {
   font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .announcement-bar-inner {
+    font-size: 0.8rem;
+    padding: var(--sp-2) var(--sp-4);
+    gap: var(--sp-2);
+  }
+
+  .announcement-bar-inner .fa-arrow-right {
+    display: none;
+  }
 }
 
 
