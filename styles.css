@@ -385,7 +385,8 @@ strong {
   color: var(--clr-primary-dark);
 }
 
-/* Green - used for the TennCare Diaper Benefit callout */
+/* DISABLED 2026-09-23: TennCare Diaper Benefit callout button, not yet
+   enrolled. Delete this comment wrapper to re-enable once signed up.
 .btn-green {
   background-color: var(--clr-green);
   border-color: var(--clr-green);
@@ -398,6 +399,7 @@ strong {
   color: var(--clr-white);
   box-shadow: var(--sh-sm);
 }
+END DISABLED btn-green */
 
 /* Ghost */
 .btn-ghost {
@@ -2120,6 +2122,8 @@ strong {
     grid-template-columns: 1fr;
   }
 
+  /* DISABLED 2026-09-23: TennCare Diaper Benefit callout, not yet
+     enrolled. Delete this comment wrapper to re-enable once signed up.
   .benefit-callout-inner {
     flex-direction: column;
     gap: var(--sp-5);
@@ -2130,6 +2134,7 @@ strong {
     height: 56px;
     font-size: 1.5rem;
   }
+  END DISABLED benefit-callout responsive */
 
   .grid-2 {
     grid-template-columns: 1fr;
@@ -2658,7 +2663,12 @@ strong {
 }
 
 
-/* ─── Announcement Bar ──────────────────────────────────────── */
+/* DISABLED 2026-09-23: TennCare Diaper Benefit is not yet enrolled.
+   Delete this comment wrapper, and the matching END marker at the
+   bottom, to re-enable the announcement bar and benefit sections
+   once signed up.
+
+   ─── Announcement Bar ────────────────────────────────────────
 
 .announcement-bar {
   background-color: var(--clr-green);
@@ -2707,7 +2717,7 @@ strong {
 }
 
 
-/* ─── TennCare Diaper Benefit (Resources Page) ──────────────── */
+─── TennCare Diaper Benefit (Resources Page) ────────────────
 
 .benefit-highlight {
   background-color: var(--clr-green-light);
@@ -2784,7 +2794,7 @@ strong {
 }
 
 
-/* ─── TennCare Diaper Benefit Callout (Front Page) ──────────── */
+─── TennCare Diaper Benefit Callout (Front Page) ────────────
 
 .benefit-callout {
   background-color: var(--clr-green-light);
@@ -2848,3 +2858,5 @@ strong {
     padding: var(--sp-12) 0;
   }
 }
+
+END DISABLED announcement bar / benefit sections */
