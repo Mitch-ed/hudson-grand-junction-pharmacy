@@ -1346,6 +1346,15 @@ END DISABLED btn-green */
   line-height: 1;
 }
 
+.app-visual-logo {
+  width: 160px;
+  max-width: 45%;
+  height: auto;
+  border-radius: 22%;
+  background-color: var(--clr-white);
+  box-shadow: var(--sh-md);
+}
+
 .app-visual-label {
   font-size: 0.9rem;
   color: var(--clr-text-muted);
